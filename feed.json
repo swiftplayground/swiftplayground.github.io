@@ -15,10 +15,10 @@
             "attributes": ["gameBuilding", "biology"],
             "contentIdentifier": "io.github.swiftplayground.mazegame",
             "contentVersion": "1.0",
-            "url": "https://swiftplayground.github.io/mazegame/MazeGame.playgroundbook.zip",
+            "url": "mazegame/MazeGame.playgroundbook.zip",
             "publishedDate": "2018-11-17T21:13:57+00:00",
             "lastUpdatedDate": "2018-11-18T21:13:57+00:00",
-            "thumbnailURL": "mazegame/thumbnail.png",
+            "thumbnailURL": "mazegame/thumbnail.JPEG",
             "bannerImageURL": "mazegame/banner.png",
             "additionalInformation": [
                 {
