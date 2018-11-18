@@ -12,7 +12,7 @@
             "detailSubtitle": "Because key paths in Swift are applied at runtime, their behavior is dynamic.",
             "description": "Learn to compare key paths and pick the right one.",
             "difficultyLevel": "advanced",
-            "attributes": "gameBuilding",
+            "attributes": ["gameBuilding", "biology"],
             "contentIdentifier": "io.github.swiftplayground.mazegame",
             "contentVersion": "1.0",
             "url": "https://swiftplayground.github.io/mazegame/MazeGame.playgroundbook.zip",
