@@ -9,8 +9,8 @@
         {
             "title": "MazeGame",
             "overviewSubtitle": "3D MazeGame",
-            "detailSubtitle": "Because key paths in Swift are applied at runtime, their behavior is dynamic.",
-            "description": "Learn to compare key paths and pick the right one.",
+            "detailSubtitle": "A fucking MazeGame",
+            "description": "...",
             "difficultyLevel": "advanced",
             "attributes": ["gameBuilding", "biology"],
             "contentIdentifier": "io.github.swiftplayground.mazegame",
