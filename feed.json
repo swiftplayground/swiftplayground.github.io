@@ -27,7 +27,10 @@
                 }
             ],
             "previewImageURLs": [
-                "mazegame/preview.png"
+                "mazegame/preview1.jpg",
+                "mazegame/preview2.heic",
+                "mazegame/preview3.heic",
+                "mazegame/preview4"
             ]
         }
     ]
