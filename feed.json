@@ -1,5 +1,5 @@
 {
-    "title": "Whimsical Swift Syntax",
+    "title": "MazeGame",
     "subtitle": "A Collection of Swift Lessons",
     "publisherName": "HaoDong Hong",
     "feedIdentifier": "io.github.swiftplayground",
@@ -18,7 +18,7 @@
             "url": "mazegame/MazeGame.playgroundbook.zip",
             "publishedDate": "2018-11-17T21:13:57+00:00",
             "lastUpdatedDate": "2018-11-18T21:13:57+00:00",
-            "thumbnailURL": "mazegame/thumbnail.JPEG",
+            "thumbnailURL": "mazegame/thumbnail.jpg",
             "bannerImageURL": "mazegame/banner.png",
             "additionalInformation": [
                 {
