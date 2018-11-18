@@ -1,0 +1,32 @@
+{
+    "title": "Whimsical Swift Syntax",
+    "subtitle": "A Collection of Swift Lessons",
+    "publisherName": "Company Name Inc.",
+    "feedIdentifier": "io.github.swiftplayground",
+    "contactURL": "https://swiftplayground.github.io",
+    "formatVersion": "1.0",
+    "documents": [
+        {
+            "title": "The Key Path Not Taken",
+            "overviewSubtitle": "Dynamically Choosing Among Key Paths",
+            "detailSubtitle": "Because key paths in Swift are applied at runtime, their behavior is dynamic.",
+            "description": "Learn to compare key paths and pick the right one.",
+            "contentIdentifier": "io.github.swiftplayground.mazegame",
+            "contentVersion": "1.0",
+            "url": "mazegame/MazeGame.playgroundbook.zip",
+            "publishedDate": "2018-11-18T21:13:57+00:00",
+            "lastUpdatedDate": "2018-11-18T21:13:57+00:00",
+            "thumbnailURL": "mazegame/HaoDong.png",
+            "bannerImageURL": "mazegame/HaoDong.png",
+            "additionalInformation": [
+                {
+                    "name": "Languages",
+                    "value": "English"
+                }
+            ],
+            "previewImageURLs": [
+                "keypaths/HaoDong.png"
+            ]
+        }
+    ]
+}
