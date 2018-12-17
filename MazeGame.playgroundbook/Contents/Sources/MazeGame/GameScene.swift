@@ -106,7 +106,7 @@ class GameScene: SCNScene {
 
         }
         // Update the camera position with some inertia.
-        SCNTransaction.animateWithDuration(0.5, timingFunction: CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)) {
+        SCNTransaction.animateWithDuration(0.5, timingFunction: CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)) {
             self.cameraYHandle.rotation = SCNVector4(0, 1, 0, self.cameraYHandle.rotation.y * (self.cameraYHandle.rotation.w - SCNFloat(directionToPan.x) * F))
             self.cameraXHandle.rotation = SCNVector4(1, 0, 0, min(max(self.cameraXHandle.rotation.w + SCNFloat(directionToPan.y) * F, 5.5), 7.0))
         }
@@ -229,7 +229,7 @@ class GameScene: SCNScene {
         addParticleSystem(confettiParticleSystem, transform: scale)
         winningNode.runAction(SCNAction.playAudio(winningSource, waitForCompletion: false))
         helper.state = .gameWin
-        SCNTransaction.animateWithDuration(0.8, timingFunction: CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut), completionBlock: {
+        SCNTransaction.animateWithDuration(0.8, timingFunction: CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut), completionBlock: {
             self.sphereNode.isHidden = false
             let actions = self.helper.getActions(with: self.animationQueue.getAll())
             self.sphereNode.runAction(SCNAction.repeatForever(actions), forKey: "sphere")
@@ -412,7 +412,7 @@ class GameScene: SCNScene {
 
         rootNode.childNodes { (node, _) -> Bool in
             if node.name != "camera" {
-                SCNTransaction.animateWithDuration(0.5, timingFunction: CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut), completionBlock: {
+                SCNTransaction.animateWithDuration(0.5, timingFunction: CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut), completionBlock: {
                     node.removeFromParentNode()
                 }, animations: {
                     node.opacity = 0
@@ -424,7 +424,7 @@ class GameScene: SCNScene {
         // not the start position
         switch helper.state {
         case .began, .gameLose, .gameWin:
-            SCNTransaction.animateWithDuration(0.5, timingFunction: CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut), completionBlock: {
+            SCNTransaction.animateWithDuration(0.5, timingFunction: CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut), completionBlock: {
                 self.helper.state = .tapToBegin
             }, animations: {
                 self.cameraNode.eulerAngles = SCNVector3Zero
@@ -443,7 +443,7 @@ class GameScene: SCNScene {
         removeAllParticleSystems()
         rootNode.childNodes { (node, _) -> Bool in
             if node.name != "camera" {
-                SCNTransaction.animateWithDuration(0.5, timingFunction: CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut), completionBlock: {
+                SCNTransaction.animateWithDuration(0.5, timingFunction: CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut), completionBlock: {
                     node.removeFromParentNode()
                 }, animations: {
                     node.opacity = 0

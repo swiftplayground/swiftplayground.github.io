@@ -345,7 +345,7 @@ public class GameController: UIViewController, PlaygroundLiveViewSafeAreaContain
                     UIView.animate(withDuration: 0.5, animations: {
                         self.timmingView.alpha = 1
                     })
-                    SCNTransaction.animateWithDuration(0.5, timingFunction: CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut), completionBlock: {
+                    SCNTransaction.animateWithDuration(0.5, timingFunction: CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut), completionBlock: {
                         self.gameScene.helper.state = .began
                         UIView.animate(withDuration: 0.8, animations: {
                             self.upView.alpha = 1.0
@@ -462,7 +462,7 @@ public class GameController: UIViewController, PlaygroundLiveViewSafeAreaContain
     @objc func cameraButtonTapped(_ button: UIButton!) {
         if gameScene.helper.state == .gameWin {
             button.isEnabled = false
-            SCNTransaction.animateWithDuration(1.0, timingFunction: CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut), completionBlock: {
+            SCNTransaction.animateWithDuration(1.0, timingFunction: CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut), completionBlock: {
                 if let actions = self.gameScene.sphereNode.action(forKey: "sphere") {
                     self.gameScene.cameraYHandle.runAction(SCNAction.repeatForever(actions), forKey: "camera")
                 }
@@ -483,7 +483,7 @@ public class GameController: UIViewController, PlaygroundLiveViewSafeAreaContain
                 gameScene.sphereNode.isHidden = false
                 let actions = gameScene.helper.getActions(with: gameScene.animationQueue.getAll())
 
-                SCNTransaction.animateWithDuration(1.0, timingFunction: CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut), completionBlock: {
+                SCNTransaction.animateWithDuration(1.0, timingFunction: CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut), completionBlock: {
                     self.gameScene.sphereNode.runAction(SCNAction.repeatForever(actions), forKey: "sphere")
                     button.isEnabled = true
                     self.flag = !self.flag

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>5</string>
+			<key>ModifiedRange</key>
+			<string>{1397, 1}</string>
+			<key>OriginalContent</key>
+			<string>3</string>
+			<key>OriginalRange</key>
+			<string>{1397, 1}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>0.25882354378700256, green: 0.7568627595901489, blue: 0.9686274528503418, alpha: 1.0) , #colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1), #colorLiteral(red: 0.4745098054409027, green: 0.8392156958580017, blue: 0.9764705896377563, alpha: 1.0</string>
+			<key>ModifiedRange</key>
+			<string>{1562, 253}</string>
+			<key>OriginalContent</key>
+			<string>1, green: 0.1491314173, blue: 0, alpha: 1) , #colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1), #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 1</string>
+			<key>OriginalRange</key>
+			<string>{1562, 168}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/MazeGame.playgroundchapter/Pages/SecondLevel.playgroundpage/Contents.swift</string>
+</dict>
+</plist>

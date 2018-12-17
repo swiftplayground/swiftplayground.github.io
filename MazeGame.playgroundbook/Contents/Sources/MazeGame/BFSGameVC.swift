@@ -458,7 +458,7 @@ public class BFSGameVC: UIViewController {
             sceneView.allowsCameraControl = false
             cameraButton.isEnabled = false
             self.inSky = false
-            let (directions, _, _, flag) = helper.Check(with: matrix, startPoint: entrence, endPoint: endPoint)
+            let (directions, _, _, _) = helper.Check(with: matrix, startPoint: entrence, endPoint: endPoint)
             SCNTransaction.animateWithDuration(2.0, timingFunction: nil, completionBlock: {
                 if directions.count > 0 {
                     //let directionQueue = self.helper.getAnimationQueue(with: directions)
@@ -549,7 +549,7 @@ public class BFSGameVC: UIViewController {
 
         }
         // Update the camera position with some inertia.
-        SCNTransaction.animateWithDuration(0.5, timingFunction: CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)) {
+        SCNTransaction.animateWithDuration(0.5, timingFunction: CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)) {
             self.cameraYHandle.rotation = SCNVector4(0, 1, 0, self.cameraYHandle.rotation.y * (self.cameraYHandle.rotation.w - SCNFloat(directionToPan.x) * F))
             self.cameraXHandle.rotation = SCNVector4(1, 0, 0, min(max(self.cameraXHandle.rotation.w + SCNFloat(directionToPan.y) * F, 5.5), 7.0))
         }

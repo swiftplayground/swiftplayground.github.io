@@ -14,7 +14,7 @@
             "difficultyLevel": "advanced",
             "attributes": ["gameBuilding", "biology"],
             "contentIdentifier": "io.github.swiftplayground.mazegame",
-            "contentVersion": "2.0",
+            "contentVersion": "2.1",
             "url": "mazegame/MazeGame.playgroundbook.zip",
             "publishedDate": "2018-11-17T21:13:57+00:00",
             "lastUpdatedDate": "2018-11-18T21:13:57+00:00",
